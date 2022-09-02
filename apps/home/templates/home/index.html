@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% extends "home/base.html" %}
+{% load static %}
+{% load static i18n %}
+{% block title %}
+{{title}}
+{% endblock title %}
+{% block content %}
+
+                <h2 class="header">Welcome to Simple Countdown</h2>
+                <p class="description">Simple Countdown enables you to create a countdown to your special events and share it with your friends</p>
+            <div class="countdownParent">
+            <table class="countdownContainer">
+                <tr class="info">
+                    <td colspan="4">Custom Countdown</td>
+                </tr>
+                <tr class="info">
+                    <td id="days">120</td>
+                    <td id="hours">4</td>
+                    <td id="minutes">12</td>
+                    <td id="seconds">22</td>
+                </tr>
+                <tr>
+                    <td>Days</td>
+                    <td>Hours</td>
+                    <td>Minutes</td>
+                    <td>Seconds</td>
+                </tr>
+            </table>
+
+        </div>
+        <p class="description">All you need to do is to <a href="#">Sign Up</a> and start creating your own countdowns</p>
+
+{% endblock content %}
